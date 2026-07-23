@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberts Schools | Premium Primary School, Satellite Town, Lagos</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Welcome to Roberts Schools, Satellite Town, Lagos. Providing premium primary education nurturing academic excellence, integrity, leadership, and moral values since 2018. RC: 2633098.">
+    <meta name="keywords" content="Roberts Schools, Schools in Satellite Town, Best primary school in Lagos, Private schools Lagos, Nursery school Satellite Town">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Roberts Schools - Where Young Minds Become Future Leaders">
+    <meta property="og:description" content="Discover premium primary education at Roberts Schools in Lagos. Enroll your child for academic and character-driven success.">
+    <meta property="og:image" content="assets/images/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandPurple: '#B558CE',
+                        brandGold: '#F4B400',
+                        brandGray: '#F7F8FA',
+                        brandDark: '#0A0E17',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Third Party Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-brandGray text-brandDark font-sans overflow-x-hidden">
+
+    <!-- 1. TOP HEADER -->
+    <header class="bg-brandDark text-white text-xs py-2 px-4 md:px-8 border-b border-white/10 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <a href="tel:+2348000000000" class="hover:text-brandGold transition-all duration-300"><i class="fa-solid fa-phone mr-2 text-brandPurple"></i>+234 (0) 803 123 4567</a>
+                <a href="mailto:info@robertsschools.com" class="hover:text-brandGold transition-all duration-300"><i class="fa-solid fa-envelope mr-2 text-brandPurple"></i>info@robertsschools.com</a>
+                <span class="text-gray-400"><i class="fa-solid fa-location-dot mr-2 text-brandPurple"></i>Satellite Town, Lagos</span>
+            </div>
+            <div class="flex items-center space-x-6">
+                <div class="space-x-3 border-r border-white/20 pr-6">
+                    <a href="pages/admissions.html" class="hover:text-brandGold font-medium">Admissions</a>
+                    <a href="pages/portal.html" class="hover:text-brandGold font-medium">Portal</a>
+                    <a href="pages/news.html" class="hover:text-brandGold font-medium">News</a>
+                    <a href="pages/contact.html" class="hover:text-brandGold font-medium">Contact</a>
+                </div>
+                <div class="flex space-x-3">
+                    <a href="#" class="hover:text-brandPurple transition-colors"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-brandPurple transition-colors"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-brandPurple transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-brandPurple transition-colors"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. NAVIGATION BAR -->
+    <nav id="navbar" class="bg-white/95 backdrop-blur-md sticky top-0 z-50 transition-all duration-500 shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-3 flex justify-between items-center">
+            
+            <!-- Logo area -->
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="logo.png" alt="Roberts Schools Logo" class="h-14 md:h-16 w-auto drop-shadow-sm transition-transform duration-300 hover:scale-105">
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="text-brandPurple font-semibold border-b-2 border-brandPurple pb-1">Home</a>
+                <a href="pages/about.html" class="text-gray-700 hover:text-brandPurple font-medium transition-colors">About Us</a>
+                <a href="pages/admissions.html" class="text-gray-700 hover:text-brandPurple font-medium transition-colors">Admissions</a>
+                <a href="pages/academics.html" class="text-gray-700 hover:text-brandPurple font-medium transition-colors">Academics</a>
+                <a href="pages/gallery.html" class="text-gray-700 hover:text-brandPurple font-medium transition-colors">Gallery</a>
+                <a href="pages/news.html" class="text-gray-700 hover:text-brandPurple font-medium transition-colors">News</a>
+                <a href="pages/contact.html" class="text-gray-700 hover:text-brandPurple font-medium transition-colors">Contact</a>
+            </div>
+
+            <!-- Header CTAs & Interactive Buttons -->
+            <div class="hidden lg:flex items-center space-x-4">
+                <button aria-label="Search" class="text-gray-600 hover:text-brandPurple p-2"><i class="fa-solid fa-magnifying-glass text-lg"></i></button>
+                <a href="pages/admissions.html" class="bg-brandPurple text-white px-6 py-2.5 rounded-full font-semibold hover:bg-opacity-90 hover:shadow-lg hover:scale-[1.03] transition-all duration-300">Apply Now</a>
+            </div>
+
+            <!-- Mobile Hamburger Toggle -->
+            <div class="lg:hidden flex items-center space-x-4">
+                <button id="mobile-menu-toggle" class="text-brandDark focus:outline-none p-2" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu Panel -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-4 shadow-xl">
+            <a href="index.html" class="block text-brandPurple font-semibold py-2">Home</a>
+            <a href="pages/about.html" class="block text-gray-700 hover:text-brandPurple font-medium py-2">About Us</a>
+            <a href="pages/admissions.html" class="block text-gray-700 hover:text-brandPurple font-medium py-2">Admissions</a>
+            <a href="pages/academics.html" class="block text-gray-700 hover:text-brandPurple font-medium py-2">Academics</a>
+            <a href="pages/gallery.html" class="block text-gray-700 hover:text-brandPurple font-medium py-2">Gallery</a>
+            <a href="pages/news.html" class="block text-gray-700 hover:text-brandPurple font-medium py-2">News</a>
+            <a href="pages/contact.html" class="block text-gray-700 hover:text-brandPurple font-medium py-2">Contact</a>
+            <div class="pt-4 border-t border-gray-100 flex flex-col space-y-3">
+                <a href="pages/portal.html" class="text-center text-gray-700 font-medium py-2 bg-gray-100 rounded-lg">Student/Parent Portal</a>
+                <a href="pages/admissions.html" class="text-center bg-brandPurple text-white py-3 rounded-lg font-semibold hover:bg-opacity-90">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. HERO SECTION (SLIDESHOW) -->
+    <section class="relative h-[85vh] lg:h-[92vh] w-full overflow-hidden bg-brandDark">
+        <div class="swiper-container hero-slider h-full w-full">
+            <div class="swiper-wrapper">
+                
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative h-full w-full bg-cover bg-center flex items-center" style="background-image: url('man.jpg');">
+                    <div class="absolute inset-0 bg-brandDark/60"></div>
+                    <div class="relative max-w-7xl mx-auto px-6 md:px-12 w-full text-white z-10">
+                        <span class="text-brandGold font-bold tracking-widest text-xs md:text-sm block mb-3 uppercase" data-aos="fade-down">Welcome to Roberts Schools</span>
+                        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight max-w-4xl" data-aos="fade-up" data-aos-delay="200">Where Young Minds Become Future Leaders</h1>
+                        <p class="text-base md:text-xl text-gray-200 mb-8 max-w-2xl font-light" data-aos="fade-up" data-aos-delay="400">Providing quality education that nurtures excellence, confidence, creativity, and integrity in Satellite Town, Lagos.</p>
+                        <div class="flex flex-wrap gap-4" data-aos="fade-up" data-aos-delay="600">
+                            <a href="pages/admissions.html" class="bg-brandPurple text-white px-8 py-3.5 rounded-full font-semibold hover:bg-opacity-90 hover:scale-105 transition-all shadow-lg">Enroll Today</a>
+                            <a href="pages/contact.html" class="border-2 border-white hover:bg-white hover:text-brandDark px-8 py-3.5 rounded-full font-semibold transition-all">Take a Virtual Tour</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide relative h-full w-full bg-cover bg-center flex items-center" style="background-image: url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1920&q=80');">
+                    <div class="absolute inset-0 bg-brandDark/60"></div>
+                    <div class="relative max-w-7xl mx-auto px-6 md:px-12 w-full text-white z-10">
+                        <span class="text-brandGold font-bold tracking-widest text-sm block mb-3 uppercase">Building Strong Foundations</span>
+                        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight max-w-4xl">Learning Beyond the Classroom</h1>
+                        <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl font-light">Safe, engaging, and innovative premium private school education built meticulously for tomorrow's visionaries.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="pages/academics.html" class="bg-brandPurple text-white px-8 py-3.5 rounded-full font-semibold hover:bg-opacity-90 hover:scale-105 transition-all shadow-lg">Explore Academics</a>
+                            <a href="pages/about.html" class="border-2 border-white hover:bg-white hover:text-brandDark px-8 py-3.5 rounded-full font-semibold transition-all">Our Facilities</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide relative h-full w-full bg-cover bg-center flex items-center" style="background-image: url('https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1920&q=80');">
+                    <div class="absolute inset-0 bg-brandDark/65"></div>
+                    <div class="relative max-w-7xl mx-auto px-6 md:px-12 w-full text-white z-10">
+                        <span class="text-brandGold font-bold tracking-widest text-sm block mb-3 uppercase">Excellence • Discipline • Innovation</span>
+                        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight max-w-4xl">Preparing Every Child for Global Success</h1>
+                        <p class="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl font-light">We combine world-class modern interactive teaching systems with rich moral values to ensure outstanding success.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <a href="pages/about.html" class="bg-brandPurple text-white px-8 py-3.5 rounded-full font-semibold hover:bg-opacity-90 hover:scale-105 transition-all shadow-lg">Meet Our Team</a>
+                            <a href="pages/admissions.html" class="border-2 border-white hover:bg-white hover:text-brandDark px-8 py-3.5 rounded-full font-semibold transition-all">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Slide Navigation Controls -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next hidden md:flex text-white hover:text-brandGold transition-colors"></div>
+            <div class="swiper-button-prev hidden md:flex text-white hover:text-brandGold transition-colors"></div>
+        </div>
+    </section>
+
+    <!-- 4. WELCOME SECTION -->
+    <section class="py-20 px-6 md:px-12 lg:px-24 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <span class="text-brandPurple font-semibold uppercase tracking-wider text-sm block mb-2">Welcome to Our School</span>
+                <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-brandDark">Nurturing Greatness Since Day One</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">ROBERTS SCHOOLS was established to provide world-class, premium, comprehensive, and nurturing educational systems in Satellite Town, Lagos.</p>
+                <p class="text-gray-600 mb-8 leading-relaxed">Since our incorporation in 2018 (RC: 2633098), our focus has consistently remained on raising highly confident, exceptionally intelligent, creative, and morally upright children prepared for lifelong success on a global landscape.</p>
+                <div class="flex items-center space-x-6">
+                    <a href="pages/about.html" class="bg-brandPurple text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 hover:scale-103 transition-all hover:shadow-md">Learn More About Us</a>
+                </div>
+            </div>
+            <div class="relative" data-aos="fade-left">
+                <div class="absolute -top-4 -left-4 w-1/2 h-1/2 bg-brandGold rounded-3xl -z-10 opacity-20"></div>
+                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&q=80" alt="Students learning inside Roberts School classroom" class="rounded-3xl shadow-xl w-full object-cover aspect-[4/3] border-4 border-white">
+                <div class="absolute -bottom-6 -right-6 bg-brandPurple text-white p-6 rounded-2xl shadow-xl hidden md:block">
+                    <span class="text-3xl font-bold font-serif block">100%</span>
+                    <span class="text-xs uppercase tracking-wide opacity-80">Dedicated Academic Care</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. WHY CHOOSE ROBERTS SCHOOLS -->
+    <section class="py-20 px-6 md:px-12 bg-brandGray">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <span class="text-brandPurple font-semibold uppercase tracking-wider text-sm block mb-2">Our Distinct Edge</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold text-brandDark">Why Choose Roberts Schools?</h2>
+        </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border-b-4 border-brandPurple" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-14 h-14 bg-brandPurple/10 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-graduation-cap text-2xl text-brandPurple"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brandDark">Academic Excellence</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Our learners score top percentiles and systematically grasp learning metrics across foundational levels.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border-b-4 border-brandGold" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-14 h-14 bg-brandGold/10 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-users text-2xl text-brandGold"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brandDark">Experienced Teachers</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Certified educationists and specialists who guide students on tailored path progress daily.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border-b-4 border-brandPurple" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-14 h-14 bg-brandPurple/10 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-shield-halved text-2xl text-brandPurple"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brandDark">Safe Environment</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Top safety layout features, round-the-clock physical access control, and sanitization structures.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border-b-4 border-brandGold" data-aos="fade-up" data-aos-delay="400">
+                <div class="w-14 h-14 bg-brandGold/10 rounded-xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-seedling text-2xl text-brandGold"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brandDark">Holistic Development</h3>
+                <p class="text-gray-500 text-sm leading-relaxed">Dedicated sports, computer program hubs, leadership building, and values cultivation modules.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SCHOOL LEVELS -->
+    <section class="py-20 px-6 md:px-12 lg:px-24 bg-white">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <span class="text-brandPurple font-semibold uppercase tracking-wider text-sm">Educational Paths</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold text-brandDark mt-2">Nurturing Learning Stages</h2>
+        </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Nursery -->
+            <div class="bg-brandGray rounded-3xl overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-300" data-aos="zoom-in">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" alt="Nursery school students" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Nursery</h3>
+                    <p class="text-gray-500 text-sm mb-4">A creative, friendly world fostering exploratory milestones and early foundational linguistic-social frameworks.</p>
+                    <a href="pages/academics.html" class="text-brandPurple font-semibold inline-flex items-center hover:text-brandGold transition-colors text-sm">Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+            <!-- Primary -->
+            <div class="bg-brandGray rounded-3xl overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-300" data-aos="zoom-in" data-aos-delay="100">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" alt="Primary school classroom" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Primary</h3>
+                    <p class="text-gray-500 text-sm mb-4">Focusing deeply on logical pathways, sciences, digital thinking, ethics, and world culture foundations.</p>
+                    <a href="pages/academics.html" class="text-brandPurple font-semibold inline-flex items-center hover:text-brandGold transition-colors text-sm">Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+            <!-- After School Program -->
+            <div class="bg-brandGray rounded-3xl overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-300" data-aos="zoom-in" data-aos-delay="200">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80" alt="After School Tutoring" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">After School</h3>
+                    <p class="text-gray-500 text-sm mb-4">Comprehensive homework tracking guidance, remedial academic assistance, and deep creative hobbies development.</p>
+                    <a href="pages/academics.html" class="text-brandPurple font-semibold inline-flex items-center hover:text-brandGold transition-colors text-sm">Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+            <!-- Summer School -->
+            <div class="bg-brandGray rounded-3xl overflow-hidden group shadow-sm hover:shadow-xl transition-all duration-300" data-aos="zoom-in" data-aos-delay="300">
+                <div class="relative overflow-hidden h-48">
+                    <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=600&q=80" alt="Summer school students" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Summer School</h3>
+                    <p class="text-gray-500 text-sm mb-4">Interactive mid-year holiday bootcamps covering modern digital coding, chess, visual crafts, and field activities.</p>
+                    <a href="pages/academics.html" class="text-brandPurple font-semibold inline-flex items-center hover:text-brandGold transition-colors text-sm">Learn More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. STATISTICS COUNTER -->
+    <section class="py-16 bg-brandDark text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-brandPurple/10"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div>
+                <span class="text-4xl md:text-5xl font-bold font-serif text-brandGold block mb-2 counter" data-target="500">0</span>
+                <span class="text-gray-300 text-sm tracking-wider uppercase">Happy Pupils</span>
+            </div>
+            <div>
+                <span class="text-4xl md:text-5xl font-bold font-serif text-brandGold block mb-2 counter" data-target="35">0</span>
+                <span class="text-gray-300 text-sm tracking-wider uppercase">Qualified Teachers</span>
+            </div>
+            <div>
+                <span class="text-4xl md:text-5xl font-bold font-serif text-brandGold block mb-2 counter" data-target="8">0</span>
+                <span class="text-gray-300 text-sm tracking-wider uppercase">Years of Excellence</span>
+            </div>
+            <div>
+                <span class="text-4xl md:text-5xl font-bold font-serif text-brandGold block mb-2 pointer-events-none">100%</span>
+                <span class="text-gray-300 text-sm tracking-wider uppercase">Commitment to Quality</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. ABOUT SECTION (TABS) -->
+    <section class="py-20 px-6 md:px-12 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-brandPurple font-semibold uppercase tracking-wider text-sm">Learn Who We Are</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-brandDark mt-2">Our Philosophy & Core Principles</h2>
+            </div>
+            <!-- Tab Controls -->
+            <div class="flex justify-center border-b border-gray-100 mb-8 overflow-x-auto space-x-2 md:space-x-4">
+                <button onclick="switchTab('mission')" id="tab-mission-btn" class="px-6 py-3 font-semibold border-b-2 border-brandPurple text-brandPurple transition-all">Mission</button>
+                <button onclick="switchTab('vision')" id="tab-vision-btn" class="px-6 py-3 font-medium text-gray-500 hover:text-brandPurple transition-all">Vision</button>
+                <button onclick="switchTab('values')" id="tab-values-btn" class="px-6 py-3 font-medium text-gray-500 hover:text-brandPurple transition-all">Core Values</button>
+                <button onclick="switchTab('history')" id="tab-history-btn" class="px-6 py-3 font-medium text-gray-500 hover:text-brandPurple transition-all">History</button>
+            </div>
+            <!-- Tab Contents -->
+            <div class="bg-brandGray rounded-3xl p-8 md:p-10 shadow-sm min-h-[250px]">
+                <div id="tab-mission" class="tab-panel space-y-4">
+                    <h3 class="text-2xl font-serif font-bold text-brandDark">Our Core Mission</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">To provide premium, child-centric quality education that inspires authentic creativity, strategic leadership pathways, and persistent lifelong learning in a dynamic, highly supportive global setting.</p>
+                </div>
+                <div id="tab-vision" class="tab-panel hidden space-y-4">
+                    <h3 class="text-2xl font-serif font-bold text-brandDark">Our Shared Vision</h3>
+                    <p class="text-gray-600 leading-relaxed text-lg">To become one of West Africa's leading premium primary schools, distinguished globally for exceptional academic outcomes, ethical balance, technological prowess, and wholesome human character development.</p>
+                </div>
+                <div id="tab-values" class="tab-panel hidden space-y-4">
+                    <h3 class="text-2xl font-serif font-bold text-brandDark">Our Foundational Core Values</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 pt-2">
+                        <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-brandPurple border border-purple-50">Integrity</div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-brandPurple border border-purple-50">Excellence</div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-brandPurple border border-purple-50">Discipline</div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-brandPurple border border-purple-50">Respect</div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-brandPurple border border-purple-50">Innovation</div>
+                        <div class="bg-white p-4 rounded-xl shadow-sm text-center font-bold text-brandPurple border border-purple-50">Leadership</div>
+                    </div>
+                </div>
+                <div id="tab-history" class="tab-panel hidden space-y-4">
+                    <h3 class="text-2xl font-serif font-bold text-brandDark">The Story of Roberts Schools</h3>
+                    <p class="text-gray-600 leading-relaxed">Incorporated on 25 July 2018 under registration RC 2633098, Roberts Schools was built with a vision of bridging the gap between local standards and high-fidelity global preparatory education. Over the years, we have grown from a local boutique provider into a premier icon of academic excellence inside Satellite Town, Lagos, transforming young lives daily.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. FACILITIES SECTION -->
+    <section class="py-20 px-6 md:px-12 bg-brandGray">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <span class="text-brandPurple font-semibold uppercase tracking-wider text-sm block mb-2">Our Premium Infrastructure</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold text-brandDark">Equipped for Inspiring Growth</h2>
+        </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            <!-- Classroom -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+                <div class="h-40 overflow-hidden"><img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=400&q=80" alt="Modern Classroom" class="w-full h-full object-cover group-hover:scale-105 transition-all"></div>
+                <div class="p-4"><h4 class="font-bold mb-1">Modern Classrooms</h4><p class="text-xs text-gray-500">Fully air-conditioned, highly illuminated, and audio-visually optimized space.</p></div>
+            </div>
+            <!-- ICT -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+                <div class="h-40 overflow-hidden"><img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=400&q=80" alt="Computer Lab" class="w-full h-full object-cover group-hover:scale-105 transition-all"></div>
+                <div class="p-4"><h4 class="font-bold mb-1">ICT Room</h4><p class="text-xs text-gray-500">High-speed computers, interactive coding modules, and learning apps.</p></div>
+            </div>
+            <!-- Library -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+                <div class="h-40 overflow-hidden"><img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=400&q=80" alt="School Library" class="w-full h-full object-cover group-hover:scale-105 transition-all"></div>
+                <div class="p-4"><h4 class="font-bold mb-1">Rich Library</h4><p class="text-xs text-gray-500">Wide physical literature catalogs and digital global library connections.</p></div>
+            </div>
+            <!-- Playground -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+                <div class="h-40 overflow-hidden"><img src="https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?auto=format&fit=crop&w=400&q=80" alt="Playground" class="w-full h-full object-cover group-hover:scale-105 transition-all"></div>
+                <div class="p-4"><h4 class="font-bold mb-1">Safe Playground</h4><p class="text-xs text-gray-500">Soft rubber mats, quality modern slide layouts, and safe security systems.</p></div>
+            </div>
+            <!-- School Bus -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all group">
+                <div class="h-40 overflow-hidden"><img src="https://images.unsplash.com/photo-1557223562-6c77ef16210f?auto=format&fit=crop&w=400&q=80" alt="School Bus" class="w-full h-full object-cover group-hover:scale-105 transition-all"></div>
+                <div class="p-4"><h4 class="font-bold mb-1">Transport Service</h4><p class="text-xs text-gray-500">Air-conditioned school buses covering Satellite Town and surroundings.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. LEARNING EXPERIENCE -->
+    <section class="py-20 px-6 md:px-12 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="bg-purple-50 p-8 rounded-3xl" data-aos="fade-up">
+                <div class="h-48 rounded-2xl overflow-hidden mb-6"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80" alt="Interactive Learning" class="w-full h-full object-cover"></div>
+                <h3 class="text-2xl font-bold mb-3 text-brandDark">Interactive Learning</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Engaging digital teaching screens, immersive lab practical structures, and student-driven group modules designed for deeper analytical skills.</p>
+            </div>
+            <div class="bg-amber-50 p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 rounded-2xl overflow-hidden mb-6"><img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=600&q=80" alt="Creative Arts" class="w-full h-full object-cover"></div>
+                <h3 class="text-2xl font-bold mb-3 text-brandDark">Creative Arts & Drama</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Instilling vibrant expression via painting classes, instrument tutorials, standard dramatic roleplay, and cultural exhibition events.</p>
+            </div>
+            <div class="bg-purple-50 p-8 rounded-3xl" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-48 rounded-2xl overflow-hidden mb-6"><img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=600&q=80" alt="Sports & Recreation" class="w-full h-full object-cover"></div>
+                <h3 class="text-2xl font-bold mb-3 text-brandDark">Sports & Recreation</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">Nurturing physical strength, coordination, teamwork habits, and leadership metrics via expert training and structured game formats.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. MEET OUR TEACHERS -->
+    <section class="py-20 px-6 md:px-12 bg-brandGray overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <span class="text-brandPurple font-semibold uppercase tracking-wider text-sm">Passionate Guides</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold text-brandDark">Our Dedicated Educators</h2>
+        </div>
+        <div class="max-w-7xl mx-auto relative px-4">
+            <div class="swiper-container teacher-slider overflow-hidden">
+                <div class="swiper-wrapper">
+                    <!-- Teacher 1 -->
+                    <div class="swiper-slide bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all p-6 text-center border border-gray-100">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Teacher Headshot" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-4 border-brandPurple">
+                        <h4 class="font-bold text-lg mb-1">Mrs. Helen Benson</h4>
+                        <p class="text-xs text-brandPurple font-semibold uppercase tracking-wider mb-3">Principal / Head Teacher</p>
+                        <p class="text-xs text-gray-500 mb-4">Master's in Educational Leadership with over 15 years experience directing premium curriculum.</p>
+                        <div class="flex justify-center space-x-3 text-gray-400">
+                            <a href="#" class="hover:text-brandPurple"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="hover:text-brandPurple"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <!-- Teacher 2 -->
+                    <div class="swiper-slide bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all p-6 text-center border border-gray-100">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Teacher Headshot" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-4 border-brandGold">
+                        <h4 class="font-bold text-lg mb-1">Miss Grace Nwosu</h4>
+                        <p class="text-xs text-brandGold font-semibold uppercase tracking-wider mb-3">Head of Literacy</p>
+                        <p class="text-xs text-gray-500 mb-4">Certified early educationist passionate about cultivating fluent phonics systems and analytical reading habits.</p>
+                        <div class="flex justify-center space-x-3 text-gray-400">
+                            <a href="#" class="hover:text-brandPurple"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="hover:text-brandPurple"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <!-- Teacher 3 -->
+                    <div class="swiper-slide bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-lg transition-all p-6 text-center border border-gray-100">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Teacher Headshot" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-4 border-brandPurple">
+                        <h4 class="font-bold text-lg mb-1">Mr. David Adebayo</h4>
+                        <p class="text-xs text-brandPurple font-semibold uppercase tracking-wider mb-3">STEM Coordinator</p>
+                        <p class="text-xs text-gray-500 mb-4">Dedicated computing trainer introducing children to visual code tools and exciting core mathematics hacks.</p>
+                        <div class="flex justify-center space-x-3 text-gray-400">
+                            <a href="#" class="hover:text-brandPurple"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="hover:text-brandPurple"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. TESTIMONIALS -->
+    <section class="py-20 px-6 md:px-12 bg-white">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <span class="text-brandPurple font-semibold uppercase tracking-wider text-sm block mb-2">Words from Parents</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold text-brandDark">What Our Family Says</h2>
+        </div>
+        <div class="max-w-4xl mx-auto">
+            <div class="swiper-container testimonial-slider overflow-hidden">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide text-center px-4">
+                        <div class="flex justify-center text-brandGold space-x-1 mb-6 text-xl">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="font-serif text-xl md:text-2xl italic text-gray-600 mb-8 leading-relaxed">"The level of academic rigor and moral dedication at Roberts Schools is incredible. My children's vocabulary, public confidence, and cognitive capacities have developed remarkably since enrolling."</p>
+                        <h4 class="font-bold text-brandDark">Dr. & Mrs. Chidi Okafor</h4>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Satellite Town Parents</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide text-center px-4">
+                        <div class="flex justify-center text-brandGold space-x-1 mb-6 text-xl">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="font-serif text-xl md:text-2xl italic text-gray-600 mb-8 leading-relaxed">"Since joining the primary school program in 2024, our daughter's critical thinking and computer skills are way ahead of peers. Highly recommend their modern interactive classrooms."</p>
+                        <h4 class="font-bold text-brandDark">Mr. & Mrs. Joseph Alao</h4>
+                        <p class="text-xs text-gray-400 uppercase tracking-wider mt-1">Lagos Parents</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-8"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. LATEST NEWS -->
+    <section class="py-20 px-6 md:px-12 bg-brandGray">
+        <div class="max-w-7xl mx-auto flex justify-between items-end mb-16">
+            <div>
+                <span class="text-brandPurple font-semibold uppercase tracking-wider text-sm block mb-2">School Journal</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-brandDark">Updates & Insights</h2>
+            </div>
+            <a href="pages/news.html" class="text-brandPurple hover:text-brandGold font-bold transition-all inline-flex items-center">Read All Blogs <i class="fa-solid fa-chevron-right ml-2 text-xs"></i></a>
+        </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- News 1 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=600&q=80" alt="Pupils smiling" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-300">
+                    <span class="absolute top-4 left-4 bg-brandPurple text-white px-3 py-1 rounded-full text-xs font-bold">Academics</span>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs text-gray-400 block mb-2"><i class="fa-regular fa-calendar mr-2"></i>July 14, 2026</span>
+                    <h3 class="font-bold text-xl mb-3 group-hover:text-brandPurple transition-colors leading-snug">Cultivating Scientific Curiosity in Early Primary Learners</h3>
+                    <p class="text-gray-500 text-sm mb-4 line-clamp-2">Inside Roberts School classrooms, learning sciences goes beyond textbook structures. We look at practical science experiments...</p>
+                    <a href="pages/news.html" class="font-bold text-sm text-brandDark group-hover:text-brandPurple transition-colors">Read More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+            <!-- News 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=600&q=80" alt="Students in ICT Lab" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-300">
+                    <span class="absolute top-4 left-4 bg-brandGold text-brandDark px-3 py-1 rounded-full text-xs font-bold">School Life</span>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs text-gray-400 block mb-2"><i class="fa-regular fa-calendar mr-2"></i>June 28, 2026</span>
+                    <h3 class="font-bold text-xl mb-3 group-hover:text-brandPurple transition-colors leading-snug">The Crucial Role of Interpersonal Play in Toddler Growth</h3>
+                    <p class="text-gray-500 text-sm mb-4 line-clamp-2">Our modern facilities provide critical structural playground safe networks to build collaborative socio-emotional frameworks...</p>
+                    <a href="pages/news.html" class="font-bold text-sm text-brandDark group-hover:text-brandPurple transition-colors">Read More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+            <!-- News 3 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+                <div class="h-56 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" alt="Children reading" class="w-full h-full object-cover group-hover:scale-105 transition-all duration-300">
+                    <span class="absolute top-4 left-4 bg-brandPurple text-white px-3 py-1 rounded-full text-xs font-bold">Innovation</span>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs text-gray-400 block mb-2"><i class="fa-regular fa-calendar mr-2"></i>May 15, 2026</span>
+                    <h3 class="font-bold text-xl mb-3 group-hover:text-brandPurple transition-colors leading-snug">Integrating Scratch Programming in Primary Curriculums</h3>
+                    <p class="text-gray-500 text-sm mb-4 line-clamp-2">How early computer classes inspire analytical processes and sequential debugging structures for 2026 academic standards...</p>
+                    <a href="pages/news.html" class="font-bold text-sm text-brandDark group-hover:text-brandPurple transition-colors">Read More <i class="fa-solid fa-arrow-right ml-2 text-xs"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. UPCOMING EVENTS -->
+    <section class="py-20 px-6 md:px-12 bg-white">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-1">
+                <span class="text-brandPurple font-semibold uppercase tracking-wider text-sm block mb-2">Academic Calendar</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-brandDark mb-6">Upcoming Events & Activities</h2>
+                <p class="text-gray-500 mb-6">Stay informed on important program schedules, parents forum conferences, field trips, and cultural exhibition programs.</p>
+                <a href="pages/events.html" class="bg-brandPurple text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 inline-block">View Full Calendar</a>
+            </div>
+            <div class="lg:col-span-2 space-y-6">
+                <!-- Event 1 -->
+                <div class="flex flex-col md:flex-row gap-6 p-6 rounded-2xl bg-brandGray hover:bg-purple-50/50 transition-all border border-gray-100">
+                    <div class="w-20 h-20 bg-brandPurple text-white rounded-xl flex flex-col items-center justify-center font-bold flex-shrink-0">
+                        <span class="text-2xl leading-none">25</span>
+                        <span class="text-xs uppercase tracking-wide mt-1">July</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-1">Annual Founders Day / 8-Year Anniversary Celebration</h3>
+                        <p class="text-xs text-brandPurple font-semibold mb-2"><i class="fa-regular fa-clock mr-2"></i>09:00 AM - 02:00 PM</p>
+                        <p class="text-xs text-gray-500">A special school assembly celebrating our active progress milestones since 2018. Awards and arts exhibits featured.</p>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="flex flex-col md:flex-row gap-6 p-6 rounded-2xl bg-brandGray hover:bg-purple-50/50 transition-all border border-gray-100">
+                    <div class="w-20 h-20 bg-brandGold text-brandDark rounded-xl flex flex-col items-center justify-center font-bold flex-shrink-0">
+                        <span class="text-2xl leading-none">12</span>
+                        <span class="text-xs uppercase tracking-wide mt-1">Sept</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-1">Parent-Teacher Orientation (First Term 2026/2027)</h3>
+                        <p class="text-xs text-brandPurple font-semibold mb-2"><i class="fa-regular fa-clock mr-2"></i>10:00 AM - 12:30 PM</p>
+                        <p class="text-xs text-gray-500">Welcoming all new and returning parents to review core curriculum frameworks and structural policy updates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. GALLERY (MASONRY & LIGHTBOX) -->
+    <section class="py-20 px-6 md:px-12 bg-brandGray">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <span class="text-brandPurple font-semibold uppercase tracking-wider text-sm block mb-2">Vibrant Memories</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold text-brandDark">Our School in Action</h2>
+        </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="relative group overflow-hidden rounded-2xl h-48 md:h-64 cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80')">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" alt="Students reading" class="w-full h-full object-cover group-hover:scale-105 transition-all">
+                <div class="absolute inset-0 bg-brandPurple/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white"><i class="fa-solid fa-plus text-3xl"></i></div>
+            </div>
+            <div class="relative group overflow-hidden rounded-2xl h-48 md:h-64 cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1200&q=80')">
+                <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=600&q=80" alt="Students in classroom" class="w-full h-full object-cover group-hover:scale-105 transition-all">
+                <div class="absolute inset-0 bg-brandPurple/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white"><i class="fa-solid fa-plus text-3xl"></i></div>
+            </div>
+            <div class="relative group overflow-hidden rounded-2xl h-48 md:h-64 cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80')">
+                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" alt="Teacher explaining topic" class="w-full h-full object-cover group-hover:scale-105 transition-all">
+                <div class="absolute inset-0 bg-brandPurple/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white"><i class="fa-solid fa-plus text-3xl"></i></div>
+            </div>
+            <div class="relative group overflow-hidden rounded-2xl h-48 md:h-64 cursor-pointer" onclick="openLightbox('https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=1200&q=80')">
+                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=600&q=80" alt="Graduation" class="w-full h-full object-cover group-hover:scale-105 transition-all">
+                <div class="absolute inset-0 bg-brandPurple/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white"><i class="fa-solid fa-plus text-3xl"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 16. ADMISSIONS SECTION -->
+    <section class="py-20 px-6 bg-brandDark text-white relative overflow-hidden text-center">
+        <div class="absolute inset-0 bg-brandPurple/15"></div>
+        <div class="relative z-10 max-w-4xl mx-auto space-y-6">
+            <span class="text-brandGold font-bold tracking-widest text-sm uppercase">Secure Your Child's Future Today</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold leading-tight">Admissions Open for the 2026/2027 Academic Session</h2>
+            <p class="text-gray-300 max-w-xl mx-auto text-sm md:text-base">Experience premium academic standards and nurturing values. Fill out an inquiry form or download our full curriculum guidelines book.</p>
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="pages/admissions.html" class="bg-brandPurple text-white px-8 py-3.5 rounded-full font-bold hover:bg-opacity-95 hover:scale-105 transition-all shadow-lg">Apply Online Now</a>
+                <a href="#" class="bg-white/10 hover:bg-white/20 text-white px-8 py-3.5 rounded-full font-bold transition-all border border-white/20">Download Prospectus <i class="fa-solid fa-download ml-2 text-xs"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 17. FAQ SECTION -->
+    <section class="py-20 px-6 md:px-12 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-brandPurple font-semibold uppercase tracking-wider text-sm">Have Questions?</span>
+                <h2 class="font-serif text-3xl md:text-4xl font-bold text-brandDark mt-2">Frequently Asked Questions</h2>
+            </div>
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-gray-100 rounded-2xl p-6 bg-brandGray">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center font-bold text-brandDark text-left">
+                        <span>How do I apply for admission at Roberts Schools?</span>
+                        <i class="fa-solid fa-chevron-down text-brandPurple transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-sm text-gray-500 leading-relaxed">
+                        Our application process is seamless. Simply click on 'Apply Online Now' to fill out the digital inquiry registration page, or visit our Satellite Town administrative campus to purchase physical application documents.
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="border border-gray-100 rounded-2xl p-6 bg-brandGray">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center font-bold text-brandDark text-left">
+                        <span>What academic curriculum standard do you offer?</span>
+                        <i class="fa-solid fa-chevron-down text-brandPurple transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-sm text-gray-500 leading-relaxed">
+                        We blend a rigorous domestic educational curriculum with key foundational international frameworks, heavily emphasizing practical sciences, interactive computing logic, deep-level literacy, and creative expression modules.
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="border border-gray-100 rounded-2xl p-6 bg-brandGray">
+                    <button onclick="toggleFaq(this)" class="w-full flex justify-between items-center font-bold text-brandDark text-left">
+                        <span>Do you provide modern school bus transportation?</span>
+                        <i class="fa-solid fa-chevron-down text-brandPurple transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden mt-4 text-sm text-gray-500 leading-relaxed">
+                        Yes, we have a highly safe, fully monitored, air-conditioned bus transport infrastructure covering major areas within Satellite Town, Lagos and neighboring residential zones.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 18. CONTACT SECTION -->
+    <section class="py-20 px-6 md:px-12 bg-brandGray">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+            <div class="bg-white rounded-3xl p-8 shadow-sm flex flex-col justify-between" data-aos="fade-right">
+                <div>
+                    <span class="text-brandPurple font-semibold uppercase tracking-wider text-sm">Reach Out</span>
+                    <h2 class="font-serif text-3xl font-bold text-brandDark mt-2 mb-6">Send Us a Direct Message</h2>
+                    <form action="#" class="space-y-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" class="w-full bg-brandGray border-0 rounded-xl px-5 py-3 text-sm focus:ring-2 focus:ring-brandPurple" required>
+                            <input type="email" placeholder="Your Email" class="w-full bg-brandGray border-0 rounded-xl px-5 py-3 text-sm focus:ring-2 focus:ring-brandPurple" required>
+                        </div>
+                        <input type="tel" placeholder="Phone Number" class="w-full bg-brandGray border-0 rounded-xl px-5 py-3 text-sm focus:ring-2 focus:ring-brandPurple" required>
+                        <input type="text" placeholder="Inquiry Subject" class="w-full bg-brandGray border-0 rounded-xl px-5 py-3 text-sm focus:ring-2 focus:ring-brandPurple" required>
+                        <textarea placeholder="Your Message Here" rows="4" class="w-full bg-brandGray border-0 rounded-xl px-5 py-3 text-sm focus:ring-2 focus:ring-brandPurple" required></textarea>
+                        <button type="submit" class="bg-brandPurple text-white px-8 py-3.5 rounded-full font-bold hover:bg-opacity-95 shadow-md w-full transition-all">Submit Secure Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="bg-white rounded-3xl overflow-hidden shadow-sm flex flex-col" data-aos="fade-left">
+                <!-- Google Maps (Embedded) -->
+                <div class="h-80 w-full relative">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.655845173775!2d3.26252967520023!3d6.438258223932402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b879f90eb61eb%3A0xe7bc383687be69d5!2sSatellite%20Town%2C%20Lagos!5e0!3m2!1sen!2sng!4v1710500000000!5m2!1sen!2sng" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="p-8 space-y-4 text-sm text-gray-600 bg-white">
+                    <div class="flex items-start space-x-3">
+                        <i class="fa-solid fa-location-dot text-brandPurple mt-1"></i>
+                        <span>No. 10 Aku Street, Satellite Town, Lagos, Nigeria</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-phone text-brandPurple"></i>
+                        <span>+234 (0) 803 123 4567, +234 (0) 901 234 5678</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-clock text-brandPurple"></i>
+                        <span>Office Hours: Monday - Friday (07:30 AM - 04:30 PM)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 19. FOOTER -->
+    <footer class="bg-brandDark text-white pt-16 pb-8 px-6 md:px-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <div class="space-y-4">
+                <img src="assets/images/logo.png" alt="Roberts Schools" class="h-16 w-auto mb-4">
+                <p class="text-sm text-gray-400 leading-relaxed">Providing high-end modern nursery and primary class pathways focused on nurturing academic intelligence and moral development since 2018.</p>
+                <p class="text-xs text-brandGold font-semibold uppercase tracking-wider">RC Number: RC 2633098</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6 text-white border-l-4 border-brandPurple pl-3">Quick Navigation</h4>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li><a href="pages/about.html" class="hover:text-brandGold transition-colors">About Our Academy</a></li>
+                    <li><a href="pages/admissions.html" class="hover:text-brandGold transition-colors">Admissions Guide & Form</a></li>
+                    <li><a href="pages/academics.html" class="hover:text-brandGold transition-colors">Our Curriculum</a></li>
+                    <li><a href="pages/gallery.html" class="hover:text-brandGold transition-colors">Photo Memory Gallery</a></li>
+                    <li><a href="pages/portal.html" class="hover:text-brandGold transition-colors">Parents Portal</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6 text-white border-l-4 border-brandGold pl-3">Get in Touch</h4>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li>No. 10 Aku Street, Satellite Town, Lagos</li>
+                    <li><a href="tel:+2348000000000" class="hover:text-brandGold">+234 (0) 803 123 4567</a></li>
+                    <li><a href="mailto:info@robertsschools.com" class="hover:text-brandGold">info@robertsschools.com</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg mb-6 text-white border-l-4 border-brandPurple pl-3">Newsletter Subscription</h4>
+                <p class="text-sm text-gray-400 mb-4">Keep track of school term announcements and academic programs.</p>
+                <form class="flex flex-col space-y-2">
+                    <input type="email" placeholder="Enter Your Email" class="bg-white/5 border-0 rounded-xl px-4 py-3 text-sm focus:ring-2 focus:ring-brandPurple text-white" required>
+                    <button type="submit" class="bg-brandPurple text-white py-3 rounded-xl font-bold hover:bg-opacity-95 transition-all text-xs uppercase tracking-wider">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+            <p>&copy; 2026 ROBERTS SCHOOLS. All Rights Reserved. (Active Status | RC 2633098)</p>
+            <div class="space-x-4">
+                <a href="pages/privacy.html" class="hover:text-brandPurple">Privacy Policy</a>
+                <a href="pages/terms.html" class="hover:text-brandPurple">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE FLOATING MODULES -->
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="fixed bottom-6 right-6 bg-brandPurple text-white w-12 h-12 rounded-full flex items-center justify-center shadow-xl opacity-0 translate-y-10 hover:bg-opacity-90 transition-all duration-300 z-50">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/2348031234567" target="_blank" class="fixed bottom-6 left-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-xl hover:scale-110 hover:bg-green-600 transition-all duration-300 z-50" aria-label="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Custom Image Lightbox Container -->
+    <div id="lightbox" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50 p-4" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white text-3xl hover:text-brandGold"><i class="fa-solid fa-xmark"></i></button>
+        <img id="lightbox-img" src="" alt="Enlarged gallery view" class="max-w-full max-h-[85vh] rounded-xl shadow-2xl">
+    </div>
+
+    <!-- Scripts CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Modular Script Imports -->
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

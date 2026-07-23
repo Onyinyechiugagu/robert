@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBERTS SCHOOLS | Premium Primary School in Satellite Town, Lagos</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="ROBERTS SCHOOLS (RC 2633098) is a premium primary school in Satellite Town, Lagos, Nigeria. Raising confident, intelligent, and morally upright future leaders.">
+    <meta name="keywords" content="Roberts Schools, Schools in Satellite Town, Primary School Lagos, Best school in Lagos, Private school Lagos, RC 2633098">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ROBERTS SCHOOLS | Premium Primary Education">
+    <meta property="og:description" content="Providing world-class primary education in Satellite Town, Lagos. Where young minds become future leaders.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=1200">
+
+    <!-- Fonts (Plus Jakarta Sans for Modern UI, Playfair Display for Elite Academic Touch) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS & Custom Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B558CE',     /* Royal Purple */
+                        secondary: '#F4B400',   /* Warm Gold */
+                        darkBg: '#0F0F12',
+                        lightBg: '#F7F8FA',
+                        charcoal: '#1A1A1A'
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS CSS for Scroll Animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        .swiper-slide-active .hero-title {
+            animation: fadeInUp 1s ease forwards 0.3s;
+            opacity: 0;
+        }
+        .swiper-slide-active .hero-subtitle {
+            animation: fadeInUp 1s ease forwards 0.6s;
+            opacity: 0;
+        }
+        .swiper-slide-active .hero-btn {
+            animation: fadeInUp 1s ease forwards 0.9s;
+            opacity: 0;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .tab-active {
+            border-color: #B558CE;
+            color: #B558CE;
+        }
+    </style>
+</head>
+<body class="font-sans text-charcoal bg-lightBg overflow-x-hidden">
+
+    <!-- Preloader -->
+    <div id="preloader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white transition-opacity duration-700">
+        <div class="flex flex-col items-center">
+            <div class="w-16 h-16 border-4 border-primary border-t-secondary rounded-full animate-spin"></div>
+            <p class="mt-4 text-primary font-bold tracking-widest text-sm font-sans">ROBERTS SCHOOLS</p>
+        </div>
+    </div>
+
+    <!-- 1. TOP HEADER -->
+    <header class="bg-darkBg text-white text-xs py-2 px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-2">
+        <div class="flex flex-wrap items-center justify-center gap-4 text-gray-300">
+            <span><i class="fa-solid fa-phone text-secondary mr-1"></i> Phone num -08064567340</span>
+            <span><i class="fa-solid fa-envelope text-secondary mr-1"></i> info@robertsschools.com</span>
+            <span class="hidden sm:inline"><i class="fa-solid fa-location-dot text-secondary mr-1"></i> Satellite Town, Lagos</span>
+        </div>
+    </header>
+
+    <!-- 2. STICKY NAVIGATION BAR -->
+    <nav id="navbar" class="sticky top-0 z-50 w-full transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo area -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="logo.png" alt="Roberts Schools logo" class="h-12 w-auto object-contain">
+                <div>
+                    <h1 class="font-serif font-black text-lg md:text-xl leading-none text-charcoal tracking-wide">ROBERTS</h1>
+                    <span class="text-[10px] tracking-[0.35em] text-gray-500 uppercase font-bold block">S C H O O L S</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex items-center gap-8 font-semibold text-sm tracking-wide text-gray-700">
+                <a href="index.html" class="text-primary hover:text-primary transition relative after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-primary">Home</a>
+                <a href="#about" class="hover:text-primary transition">About Us</a>
+                <a href="#admissions" class="hover:text-primary transition">Admissions</a>
+                <a href="#academics" class="hover:text-primary transition">Academics</a>
+                <a href="#facilities" class="hover:text-primary transition">Our School</a>
+                <a href="#news" class="hover:text-primary transition">News</a>
+                <a href="#contact" class="hover:text-primary transition">Contact</a>
+            </div>
+
+            <!-- Header CTAs -->
+            <div class="hidden lg:flex items-center gap-4">
+                <button class="text-gray-600 hover:text-primary transition text-lg" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <a href="#admissions" class="bg-primary hover:bg-opacity-90 text-white font-bold px-5 py-2.5 rounded-full text-xs uppercase tracking-wider transition shadow-md hover:scale-105 transform">
+                    Apply Now
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <button id="mobile-menu-btn" class="lg:hidden text-gray-800 text-2xl focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 shadow-xl absolute top-20 left-0 w-full transition-all duration-300 transform origin-top scale-y-0 opacity-0">
+            <div class="px-6 py-6 flex flex-col gap-4 font-semibold text-gray-700">
+                <a href="index.html" class="text-primary py-2 border-b border-gray-50">Home</a>
+                <a href="#about" class="hover:text-primary py-2 border-b border-gray-50">About Us</a>
+                <a href="#admissions" class="hover:text-primary py-2 border-b border-gray-50">Admissions</a>
+                <a href="#academics" class="hover:text-primary py-2 border-b border-gray-50">Academics</a>
+                <a href="#facilities" class="hover:text-primary py-2 border-b border-gray-50">Our School</a>
+                <a href="#news" class="hover:text-primary py-2 border-b border-gray-50">News</a>
+                <a href="#contact" class="hover:text-primary py-2 border-b border-gray-50">Contact</a>
+                <div class="flex items-center justify-between pt-4 mt-2">
+                    <a href="#admissions" class="bg-primary text-center text-white font-bold w-full py-3 rounded-xl text-sm tracking-wide shadow-md">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. HERO SECTION (SLIDESHOW) -->
+    <section class="relative h-[85vh] lg:h-[90vh] bg-darkBg overflow-hidden">
+        <div class="swiper hero-swiper h-full w-full">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative h-full w-full bg-cover bg-center" style="background-image: url('Music.jpeg');">
+                    <div class="absolute inset-0 flex items-center justify-center px-4 md:px-8">
+                        <div class="max-w-4xl text-center text-white">
+                            <span class="hero-subtitle block text-secondary uppercase font-extrabold tracking-widest mb-3 text-sm">Welcome to Roberts Schools</span>
+                            <h2 class="hero-title font-serif text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">Where Young Minds Become Future Leaders</h2>
+                            <p class="hero-subtitle text-base md:text-xl text-gray-200 max-w-2xl mx-auto mb-8 font-light">Providing quality education that nurtures excellence, confidence, creativity, and integrity from the foundation up.</p>
+                            <div class="hero-btn flex flex-wrap justify-center gap-4">
+                                <a href="#admissions" class="bg-primary hover:bg-opacity-90 text-white font-bold px-8 py-4 rounded-full text-sm uppercase tracking-wider transition shadow-lg hover:-translate-y-1">Enroll Today</a>
+                                <a href="#about" class="bg-transparent border-2 border-white hover:bg-white hover:text-charcoal text-white font-bold px-8 py-4 rounded-full text-sm uppercase tracking-wider transition shadow-lg hover:-translate-y-1">Take a Virtual Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide relative h-full w-full bg-cover bg-center" style="background-image: url('Children.png');">
+                    <div class="absolute inset-0 bg-black/60"></div>
+                    <div class="absolute inset-0 flex items-center justify-center px-4 md:px-8">
+                        <div class="max-w-4xl text-center text-white">
+                            <span class="hero-subtitle block text-secondary uppercase font-extrabold tracking-widest mb-3 text-sm">Building Strong Foundations</span>
+                            <h2 class="hero-title font-serif text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">Learning Beyond The Classroom</h2>
+                            <p class="hero-subtitle text-base md:text-xl text-gray-200 max-w-2xl mx-auto mb-8 font-light">Safe, engaging, and innovative academic experiences designed for tomorrow's global leaders.</p>
+                            <div class="hero-btn flex flex-wrap justify-center gap-4">
+                                <a href="#academics" class="bg-primary hover:bg-opacity-90 text-white font-bold px-8 py-4 rounded-full text-sm uppercase tracking-wider transition shadow-lg hover:-translate-y-1 font-sans">Explore Academics</a>
+                                <a href="#facilities" class="bg-transparent border-2 border-white hover:bg-white hover:text-charcoal text-white font-bold px-8 py-4 rounded-full text-sm uppercase tracking-wider transition shadow-lg hover:-translate-y-1 font-sans">Our Facilities</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide relative h-full w-full bg-cover bg-center" style="background-image: url('Outing.jpeg');">
+                    <div class="absolute inset-0 bg-black/60"></div>
+                    <div class="absolute inset-0 flex items-center justify-center px-4 md:px-8">
+                        <div class="max-w-4xl text-center text-white">
+                            <span class="hero-subtitle block text-secondary uppercase font-extrabold tracking-widest mb-3 text-sm">Excellence • Discipline • Innovation</span>
+                            <h2 class="hero-title font-serif text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">Preparing Every Child for Lifelong Success</h2>
+                            <p class="hero-subtitle text-base md:text-xl text-gray-200 max-w-2xl mx-auto mb-8 font-light">We blend contemporary curriculum demands with strong moral values to help pupils thrive academically and socially.</p>
+                            <div class="hero-btn flex flex-wrap justify-center gap-4">
+                                <a href="#teachers" class="bg-primary hover:bg-opacity-90 text-white font-bold px-8 py-4 rounded-full text-sm uppercase tracking-wider transition shadow-lg hover:-translate-y-1">Meet Our Teachers</a>
+                                <a href="#admissions" class="bg-transparent border-2 border-white hover:bg-white hover:text-charcoal text-white font-bold px-8 py-4 rounded-full text-sm uppercase tracking-wider transition shadow-lg hover:-translate-y-1">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slider Controls -->
+            <div class="swiper-button-next !text-white after:!text-xl bg-white/10 hover:bg-white/30 p-8 rounded-full !w-12 !h-12 hidden md:flex items-center justify-center"></div>
+            <div class="swiper-button-prev !text-white after:!text-xl bg-white/10 hover:bg-white/30 p-8 rounded-full !w-12 !h-12 hidden md:flex items-center justify-center"></div>
+            <div class="swiper-pagination !bottom-8"></div>
+        </div>
+    </section>
+
+    <!-- 4. WELCOME SECTION -->
+    <section id="about" class="py-20 px-4 md:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left: Message & History -->
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <span class="text-primary font-bold tracking-widest text-xs uppercase block mb-3">Welcome to our community</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-extrabold text-charcoal mb-6 leading-tight">Raising Intelligent, Confident, and Morally Upright Children</h2>
+                <div class="h-1 w-20 bg-secondary mb-8"></div>
+                
+                <p class="text-gray-600 mb-6 leading-relaxed text-base md:text-lg">
+                    <strong>ROBERTS SCHOOLS</strong> is a nursery ,primary and secondary school, we offer day care services as well, <strong>knowledge and excellence</strong> is our motto 
+
+We have qualified teachers who are very efficient in imparting knowledge ,teaching good morals and also maintaining a high academic standard. 
+
+
+Roberts schools was founded in 2007, we initially started like a day care and then we expanded into a school with a nursery and primary section. 
+
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    We believe every child is a unique seed of potential. Through deep interactive pedagogy, individualized support systems, and a vibrant character development pathway, we grow seeds into mighty leaders.
+                </p>
+                <div class="flex items-center gap-6">
+                    <a href="#about-tabs" class="bg-primary hover:bg-opacity-95 text-white font-bold px-8 py-4 rounded-full text-xs uppercase tracking-wider transition shadow-lg hover:-translate-y-0.5">Learn More</a>
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-secondary/15 rounded-full flex items-center justify-center text-secondary">
+                            <i class="fa-solid fa-graduation-cap text-lg"></i>
+                        </div>
+                        <span class="text-sm font-bold text-gray-700">RC 2633098 (Active)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Premium Multi-layered Image showcase -->
+            <div class="relative" data-aos="fade-left" data-aos-duration="1000">
+                <div class="absolute -top-4 -left-4 w-24 h-24 bg-secondary/10 rounded-full -z-10 animate-pulse"></div>
+                <div class="absolute -bottom-4 -right-4 w-40 h-40 bg-primary/10 rounded-3xl -z-10"></div>
+                <div class="overflow-hidden rounded-3xl shadow-2xl border-8 border-white">
+                    <img src="Excelence.jpg" alt="Pupils learning and interacting with modern educational tablet" class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. WHY CHOOSE ROBERTS SCHOOLS -->
+    <section class="py-20 bg-gray-50 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-primary font-bold tracking-widest text-xs uppercase block mb-3">Our Distinction</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-extrabold text-charcoal mb-4">Why Choose Roberts Schools?</h2>
+                <div class="h-1 w-20 bg-secondary mx-auto mb-6"></div>
+                <p class="text-gray-500">We balance the finest curriculum standards with personalized pastoral care to provide an unmatched educational experience.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-primary/10 group-hover:bg-primary rounded-2xl flex items-center justify-center mb-8 transition-colors duration-300 text-primary group-hover:text-white">
+                        <i class="fa-solid fa-award text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Academic Excellence</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Rigorous British-Nigerian integration pushing pupils to the peak of international academic metrics.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-primary/10 group-hover:bg-primary rounded-2xl flex items-center justify-center mb-8 transition-colors duration-300 text-primary group-hover:text-white">
+                        <i class="fa-solid fa-user-tie text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Experienced Teachers</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Certified educationists and specialists prioritizing child psychology and interactive classroom environments.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-primary/10 group-hover:bg-primary rounded-2xl flex items-center justify-center mb-8 transition-colors duration-300 text-primary group-hover:text-white">
+                        <i class="fa-solid fa-shield-halved text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Safe Learning</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Secured environment under premium surveillance, strict pick-up protocols, and standard safety measures.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-primary/10 group-hover:bg-primary rounded-2xl flex items-center justify-center mb-8 transition-colors duration-300 text-primary group-hover:text-white">
+                        <i class="fa-solid fa-brain text-2xl"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-3">Holistic Development</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">Promoting extra-curricular leadership, visual arts, sports, public speaking, and deep logical development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SCHOOL LEVELS -->
+    <section id="academics" class="py-20 max-w-7xl mx-auto px-4 md:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-primary font-bold tracking-widest text-xs uppercase block mb-3">Educational Levels</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-extrabold text-charcoal mb-4">Our Learning Segments</h2>
+            <div class="h-1 w-20 bg-secondary mx-auto mb-6"></div>
+            <p class="text-gray-500">Every developmental stage receives curated educational models designed to unlock maximum capabilities.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Nursery -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full" data-aos="fade-up">
+                <div class="h-52 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=600" alt="Nursery Level" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-serif text-xl font-bold mb-2">Nursery School</h3>
+                    <p class="text-gray-500 text-sm mb-6 flex-grow">Building early socialization, foundational numeracy, and active literacy in a warm environment.</p>
+                    <a href="#admissions" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-2 mt-auto">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Primary -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-52 overflow-hidden relative">
+                    <img src="Primary.jpeg" alt="Primary School Level" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-serif text-xl font-bold mb-2">Primary School</h3>
+                    <p class="text-gray-500 text-sm mb-6 flex-grow">Deep inquiry, critical thinking, mathematical competencies, science experiments, and language arts mastery.</p>
+                    <a href="#admissions" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-2 mt-auto">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- After School -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-52 overflow-hidden relative">
+                    <img src="Secondary.png" alt="After School Program" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-serif text-xl font-bold mb-2">Secondary School</h3>
+                    <p class="text-gray-500 text-sm mb-6 flex-grow">At Roberts Schools, our Secondary School equips students with the knowledge, confidence, and character needed to achieve academic excellence and become responsible global citizens through innovative teaching and holistic development.</p>
+                    <a href="#admissions" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-2 mt-auto">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Summer School -->
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-52 overflow-hidden relative">
+                    <img src="Summer.jpeg" alt="Summer School Program" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+                <div class="p-6 flex flex-col flex-grow">
+                    <h3 class="font-serif text-xl font-bold mb-2">Summer Program</h3>
+                    <p class="text-gray-500 text-sm mb-6 flex-grow">Fun learning, computer coding bootcamps, swimming lessons, music discovery, and STEM exploration.</p>
+                    <a href="#admissions" class="text-primary font-bold text-xs uppercase tracking-wider hover:text-secondary flex items-center gap-2 mt-auto">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. STATISTICS COUNTER -->
+    <section class="relative bg-darkBg py-20 overflow-hidden text-white">
+        <div class="absolute inset-0 bg-[url('Outing.jpg')] bg-cover bg-center opacity-10"></div>
+        <div class="relative max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+            <div>
+                <span class="block font-serif text-5xl md:text-6xl font-black text-secondary mb-2" id="count-pupils">0</span>
+                <span class="text-xs uppercase tracking-widest text-gray-300 font-semibold block">Happy Pupils</span>
+            </div>
+            <div>
+                <span class="block font-serif text-5xl md:text-6xl font-black text-secondary mb-2" id="count-teachers">0</span>
+                <span class="text-xs uppercase tracking-widest text-gray-300 font-semibold block">Qualified Teachers</span>
+            </div>
+            <div>
+                <span class="block font-serif text-5xl md:text-6xl font-black text-secondary mb-2" id="count-years">0</span>
+                <span class="text-xs uppercase tracking-widest text-gray-300 font-semibold block">Years of Excellence</span>
+            </div>
+            <div>
+                <span class="block font-serif text-5xl md:text-6xl font-black text-secondary mb-2" id="count-commitment">0</span>
+                <span class="text-xs uppercase tracking-widest text-gray-300 font-semibold block">Commitment</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. ABOUT SECTION (TABS) -->
+    <section id="about-tabs" class="py-20 bg-white max-w-5xl mx-auto px-4 md:px-8">
+        <div class="text-center mb-12">
+            <span class="text-primary font-bold tracking-widest text-xs uppercase block mb-3">Our Compass</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-extrabold text-charcoal">Core Identity & Values</h2>
+            <div class="h-1 w-20 bg-secondary mx-auto mt-4"></div>
+        </div>
+
+        <div class="flex flex-wrap border-b border-gray-200 justify-center gap-4 md:gap-8 mb-8">
+            <button class="tab-btn pb-4 px-6 font-bold text-sm text-gray-400 border-b-2 border-transparent hover:text-primary transition-all duration-300" onclick="switchTab(event, 'mission')">Mission</button>
+            <button class="tab-btn pb-4 px-6 font-bold text-sm text-gray-400 border-b-2 border-transparent hover:text-primary transition-all duration-300 tab-active" onclick="switchTab(event, 'vision')">Vision</button>
+            <button class="tab-btn pb-4 px-6 font-bold text-sm text-gray-400 border-b-2 border-transparent hover:text-primary transition-all duration-300" onclick="switchTab(event, 'values')">Core Values</button>
+            <button class="tab-btn pb-4 px-6 font-bold text-sm text-gray-400 border-b-2 border-transparent hover:text-primary transition-all duration-300" onclick="switchTab(event, 'history')">Our Journey</button>
+        </div>
+
+        <div class="bg-gray-50 rounded-2xl p-8 md:p-12 shadow-sm border border-gray-100">
+            <!-- Mission Tab -->
+            <div id="mission" class="tab-content hidden animate-fadeIn">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="text-primary text-5xl md:text-6xl"><i class="fa-solid fa-bullseye animate-pulse"></i></div>
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold mb-4 text-charcoal">To Inspire Lifelong Learning</h3>
+                        <p class="text-gray-600 leading-relaxed">Our mission is to provide premium educational learning resources and dynamic instructions that inspire active creativity, moral leadership, robust critical evaluation, and a life of learning.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision Tab -->
+            <div id="vision" class="tab-content animate-fadeIn">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="text-secondary text-5xl md:text-6xl"><i class="fa-solid fa-eye animate-pulse"></i></div>
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold mb-4 text-charcoal">Raising International Pioneers</h3>
+                        <p class="text-gray-600 leading-relaxed">To become one of Nigeria's leading schools, globally recognized for supreme academic excellence, dynamic research integration, and unparalleled ethical character development.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Values Tab -->
+            <div id="values" class="tab-content hidden animate-fadeIn">
+                <h3 class="font-serif text-2xl font-bold mb-6 text-charcoal">Six Anchors of Character</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-4 rounded-xl shadow-xs border border-gray-100 flex items-center gap-3">
+                        <span class="w-3 h-3 bg-primary rounded-full"></span><span class="font-bold text-sm">Integrity</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-xs border border-gray-100 flex items-center gap-3">
+                        <span class="w-3 h-3 bg-secondary rounded-full"></span><span class="font-bold text-sm">Excellence</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-xs border border-gray-100 flex items-center gap-3">
+                        <span class="w-3 h-3 bg-primary rounded-full"></span><span class="font-bold text-sm">Discipline</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-xs border border-gray-100 flex items-center gap-3">
+                        <span class="w-3 h-3 bg-secondary rounded-full"></span><span class="font-bold text-sm">Respect</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-xs border border-gray-100 flex items-center gap-3">
+                        <span class="w-3 h-3 bg-primary rounded-full"></span><span class="font-bold text-sm">Innovation</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow-xs border border-gray-100 flex items-center gap-3">
+                        <span class="w-3 h-3 bg-secondary rounded-full"></span><span class="font-bold text-sm">Leadership</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- History Tab -->
+            <div id="history" class="tab-content hidden animate-fadeIn">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="text-primary text-5xl md:text-6xl"><i class="fa-solid fa-calendar-check"></i></div>
+                    <div>
+                        <h3 class="font-serif text-2xl font-bold mb-4 text-charcoal">Incorporated in 2018 (RC 2633098)</h3>
+                        <p class="text-gray-600 leading-relaxed">ROBERTS SCHOOLS was incorporated with corporate index RC 2633098 on 25 July 2018. Over the years, we have transitioned from a localized early nursery provider to an elite, modern primary educational center catering to families who demand high international standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. LEARNING EXPERIENCE -->
+    <section class="py-20 max-w-7xl mx-auto px-4 md:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-primary font-bold tracking-widest text-xs uppercase block mb-3">Immersive Culture</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-extrabold text-charcoal mb-4">The Learning Experience</h2>
+            <div class="h-1 w-20 bg-secondary mx-auto mb-6"></div>
+            <p class="text-gray-500">Education is a holistic journey. We create moments of discovery inside and outside of books.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="relative group overflow-hidden rounded-2xl shadow-md h-96" data-aos="zoom-in">
+                <img src="Music.jpeg" alt="Interactive Class" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                    <h3 class="font-serif text-2xl font-bold mb-2">Music</h3>
+                    <p class="text-gray-300 text-sm">Nurturing musical talent through engaging lessons, vocal training, and instrumental practice, allowing every child to discover and express their creativity.</p>
+                </div>
+            </div>
+
+            <div class="relative group overflow-hidden rounded-2xl shadow-md h-96" data-aos="zoom-in" data-aos-delay="100">
+                <img src="Ar.jpeg" alt="Creative Arts" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                    <h3 class="font-serif text-2xl font-bold mb-2">Creative Arts</h3>
+                    <p class="text-gray-300 text-sm">Visual arts, theatre, instrumental training, and chorus classes to build creative expression.</p>
+                </div>
+            </div>
+
+            <div class="relative group overflow-hidden rounded-2xl shadow-md h-96" data-aos="zoom-in" data-aos-delay="200">
+                <img src="Physical Education.jpeg" alt="Sports Recreation" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                    <h3 class="font-serif text-2xl font-bold mb-2">Physical Education</h3>
+                    <p class="text-gray-300 text-sm">Fostering teamwork, personal physical health, endurance, and competitive coordination.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. MEET THE PROPRIETOR -->
+    <section id="proprietor" class="py-20 bg-gray-50 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <span class="text-primary font-bold tracking-widest text-xs uppercase block mb-3">Our School</span>
+                    <h2 class="font-serif text-3xl md:text-5xl font-extrabold text-charcoal">Meet Our Proprietor</h2>
+                    <div class="h-1 w-20 bg-secondary mt-4"></div>
+                </div>
+            </div>
+
+            <div class="w-full">
+                <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm">
+                    <div class="w-full h-[560px] md:h-[740px] overflow-hidden bg-gray-200">
+                        <img src="Proprietor.png" alt="Proprietor photo" class="w-full h-full object-cover object-[50%_0%]">
+                    </div>
+                    <div class="p-6 md:p-8">
+                        <span class="text-primary font-bold text-[10px] uppercase tracking-wider block mb-1">Proprietor</span>
+                        <h4 class="font-serif text-xl font-bold text-charcoal mb-2">Mr. Anachebe Nnamdi Raymond</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-4">Dedicated school administrator with 15+ years experience in education development.</p>
+                        <p class="text-gray-500 text-sm leading-relaxed">Our proprietor is a certified professional with deep expertise in primary pedagogical systems and developmental child psychology.</p>
+                        <div class="flex gap-3 text-gray-400 mt-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. TESTIMONIALS -->
+    <section class="py-20 bg-white max-w-5xl mx-auto px-4 md:px-8">
+        <div class="text-center mb-16">
+            <span class="text-primary font-bold tracking-widest text-xs uppercase block mb-3">Community Voices</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-extrabold text-charcoal">Words From Parents</h2>
+            <div class="h-1 w-20 bg-secondary mx-auto mt-4"></div>
+        </div>
+
+        <div class="swiper testimonial-swiper pb-12">
+            <div class="swiper-wrapper">
+                <!-- Testimonial 1 -->
+                <div class="swiper-slide p-8 bg-gray-50 border border-gray-100 rounded-3xl">
+                    <div class="flex gap-1 text-secondary mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed mb-6">"Deciding to enroll my son in Roberts Schools in 2024 has been our best parenting choice. His self-expression, mental math speed, and general confidence have blossomed incredibly. The teachers are simply phenomenal!"</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center font-bold text-primary font-serif">OO</div>
+                        <div>
+                            <h5 class="font-bold text-charcoal text-sm">Mrs. Olanrewaju Olumide</h5>
+                            <span class="text-xs text-gray-400 block">Parent, Primary 4 Pupil</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="swiper-slide p-8 bg-gray-50 border border-gray-100 rounded-3xl">
+                    <div class="flex gap-1 text-secondary mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic leading-relaxed mb-6">"The administrative attention to child discipline combined with advanced technology like the new coding class is super impressive. Roberts Schools treats children with standard modern global educational care."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center font-bold text-primary font-serif">CE</div>
+                        <div>
+                            <h5 class="font-bold text-charcoal text-sm">Mr. Chidi Eze</h5>
+                            <span class="text-xs text-gray-400 block">Parent, Nursery 2 Pupil</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination !bottom-2"></div>
+        </div>
+    </section>
+    <!-- 16. ADMISSIONS SECTION (CTA BANNER) -->
+    <section id="admissions" class="relative bg-darkBg text-white py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=1800')] bg-cover bg-center opacity-15"></div>
+        <div class="relative max-w-4xl mx-auto px-4 text-center">
+            <span class="text-secondary font-extrabold tracking-widest text-sm uppercase block mb-4">Admissions Open 2026/2027</span>
+            <h2 class="font-serif text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">Invest in Your Child's Leadership Foundations</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto text-base md:text-lg mb-10 leading-relaxed font-light">Give your ward the lifetime leverage of superior creative guidance, moral values, and academic excellence at Roberts Schools.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#contact" class="bg-primary hover:bg-opacity-95 text-white font-bold px-8 py-4 rounded-full text-xs uppercase tracking-wider transition shadow-lg hover:-translate-y-1">Apply Now</a>
+                <a href="#" class="bg-transparent border-2 border-white hover:bg-white hover:text-charcoal text-white font-bold px-8 py-4 rounded-full text-xs uppercase tracking-wider transition shadow-lg hover:-translate-y-1">Download Prospectus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 17. FAQ -->
+    <section class="py-20 bg-white max-w-4xl mx-auto px-4 md:px-8">
+        <div class="text-center mb-16">
+            <span class="text-primary font-bold tracking-widest text-xs uppercase block mb-3">Got Questions?</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-extrabold text-charcoal">Frequently Asked Questions</h2>
+            <div class="h-1 w-20 bg-secondary mx-auto mt-4"></div>
+        </div>
+
+        <div class="space-y-4">
+            <!-- Accordion 1 -->
+            <div class="border border-gray-100 rounded-2xl bg-gray-50 overflow-hidden transition-all duration-300">
+                <button class="accordion-header w-full px-6 py-5 text-left font-bold text-charcoal flex justify-between items-center" onclick="toggleAccordion(this)">
+                    <span>How do I process my child's admission?</span>
+                    <i class="fa-solid fa-plus text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+                    <p class="text-gray-600 text-sm leading-relaxed pb-5">Parents can fill our online contact details form or purchase our structured admission physical bundle from our Satellite Town administrative office. Assessment tests are conducted for pupils entering Nursery 2 up to Primary classes.</p>
+                </div>
+            </div>
+
+            <!-- Accordion 2 -->
+            <div class="border border-gray-100 rounded-2xl bg-gray-50 overflow-hidden transition-all duration-300">
+                <button class="accordion-header w-full px-6 py-5 text-left font-bold text-charcoal flex justify-between items-center" onclick="toggleAccordion(this)">
+                    <span>What curriculum does Roberts Schools offer?</span>
+                    <i class="fa-solid fa-plus text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+                    <p class="text-gray-600 text-sm leading-relaxed pb-5">We run an integrated British-Nigerian curriculum designed to provide children with international relevance while preserving local moral discipline and cultural appreciation.</p>
+                </div>
+            </div>
+
+            <!-- Accordion 3 -->
+            <div class="border border-gray-100 rounded-2xl bg-gray-50 overflow-hidden transition-all duration-300">
+                <button class="accordion-header w-full px-6 py-5 text-left font-bold text-charcoal flex justify-between items-center" onclick="toggleAccordion(this)">
+                    <span>What is the minimum age criteria for Nursery 1 admission?</span>
+                    <i class="fa-solid fa-plus text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+                    <p class="text-gray-600 text-sm leading-relaxed pb-5">The minimum target age for Nursery 1 is 3 years of age. For early Playgroup classes, toddlers of age 2 can be safely admitted.</p>
+                </div>
+            </div>
+
+            <!-- Accordion 4 -->
+            <div class="border border-gray-100 rounded-2xl bg-gray-50 overflow-hidden transition-all duration-300">
+                <button class="accordion-header w-full px-6 py-5 text-left font-bold text-charcoal flex justify-between items-center" onclick="toggleAccordion(this)">
+                    <span>Are standard transit bus systems available?</span>
+                    <i class="fa-solid fa-plus text-primary transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+                    <p class="text-gray-600 text-sm leading-relaxed pb-5">Yes. We run a secure fleet of modern transport vehicles routing across specific areas within Satellite Town and immediate surroundings under child safety guards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 18. CONTACT SECTION & INTERACTIVE FORM -->
+    <section id="contact" class="py-20 bg-gray-50 border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <!-- Contact Details & Map -->
+            <div data-aos="fade-right">
+                <span class="text-primary font-bold tracking-widest text-xs uppercase block mb-3">Locate & Reach Us</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-extrabold text-charcoal mb-6">Contact Information</h2>
+                <div class="h-1 w-20 bg-secondary mb-8"></div>
+
+                <div class="space-y-6 mb-12">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
+                            <i class="fa-solid fa-location-dot text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-charcoal text-sm">Main Campus Address</h4>
+                            <p class="text-gray-500 text-sm mt-1">No. 10 Aku Street, Satellite Town, Lagos, Nigeria</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
+                            <i class="fa-solid fa-envelope text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-charcoal text-sm">Admissions Office Email</h4>
+                            <p class="text-gray-500 text-sm mt-1">admissions@robertsschools.com | info@robertsschools.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
+                            <i class="fa-solid fa-clock text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-charcoal text-sm">Administrative Hours</h4>
+                            <p class="text-gray-500 text-sm mt-1">Monday - Friday: 7:30 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Frame -->
+                <div class="rounded-3xl overflow-hidden border-8 border-white shadow-xl h-64 relative bg-gray-200">
+                    <!-- Leaflet / Google Map Simulation (Replaced by iframe/SDK as needed) -->
+                    <iframe class="w-full h-full border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.721494957631!2d3.2505503!3d6.4298117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b879ecaa1df49%3A0xe212891b9fa7bfa1!2sAku%20St%2C%20Satellite%20Town%2C%20Lagos!5e0!3m2!1sen!2sng!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-gray-100" data-aos="fade-left">
+                <h3 class="font-serif text-2xl font-bold mb-2 text-charcoal">Enquiry Registry</h3>
+                <p class="text-gray-400 text-sm mb-8">Register your feedback, queries, or prospective admissions consultation requests. Our admissions desk will correspond within 24 hours.</p>
+
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase font-extrabold text-gray-500 tracking-wider mb-2">Your Name</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-primary text-sm bg-gray-50 transition" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-extrabold text-gray-500 tracking-wider mb-2">Email Address</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-primary text-sm bg-gray-50 transition" placeholder="john@example.com">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs uppercase font-extrabold text-gray-500 tracking-wider mb-2">Phone Number</label>
+                            <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-primary text-sm bg-gray-50 transition" placeholder="+234...">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase font-extrabold text-gray-500 tracking-wider mb-2">Subject Preference</label>
+                            <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-primary text-sm bg-gray-50 transition">
+                                <option>Admissions Consultation</option>
+                                <option>Facility Site Tour</option>
+                                <option>Administrative Inquiries</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase font-extrabold text-gray-500 tracking-wider mb-2">Detailed message</label>
+                        <textarea required rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-primary text-sm bg-gray-50 transition" placeholder="Please outline any specific requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-primary hover:bg-opacity-95 text-white font-bold py-4 rounded-xl text-xs uppercase tracking-wider transition shadow-lg hover:-translate-y-0.5">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 19. FOOTER -->
+    <footer class="bg-darkBg text-white pt-20 pb-8">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+            <!-- Left Bio matching school registration info -->
+            <div>
+                <a href="#" class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center border border-secondary">
+                        <span class="text-white font-serif font-black text-lg">R</span>
+                    </div>
+                    <div>
+                        <h4 class="font-serif font-black text-base tracking-wide leading-none">ROBERTS</h4>
+                        <span class="text-[8px] tracking-[0.35em] text-gray-400 font-bold block uppercase">S C H O O L S</span>
+                    </div>
+                </a>
+                <p class="text-gray-400 text-sm leading-relaxed mb-4">Established in Satellite Town, Lagos, as a premier education registered on 25 July 2018 (RC 2633098) with ACTIVE operations status.</p>
+                <p class="text-xs text-gray-500">Raising global leaders through premium visual arts, mathematics, and critical science.</p>
+            </div>
+
+            <!-- Quick Navigation links -->
+            <div>
+                <h4 class="font-serif text-lg font-bold mb-6 text-secondary border-b border-gray-800 pb-2">Academic Paths</h4>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    <li><a href="#about" class="hover:text-primary transition"><i class="fa-solid fa-chevron-right text-[10px] mr-2"></i> About Us</a></li>
+                    <li><a href="#academics" class="hover:text-primary transition"><i class="fa-solid fa-chevron-right text-[10px] mr-2"></i> Our Curriculum</a></li>
+                    <li><a href="#facilities" class="hover:text-primary transition"><i class="fa-solid fa-chevron-right text-[10px] mr-2"></i> Facilities</a></li>
+                    <li><a href="#news" class="hover:text-primary transition"><i class="fa-solid fa-chevron-right text-[10px] mr-2"></i> School News</a></li>
+                </ul>
+            </div>
+
+            <!-- Admissions quick links -->
+            <div>
+                </ul>
+            </div>
+
+            <!-- Newsletter Box -->
+            <div>
+                <h4 class="font-serif text-lg font-bold mb-6 text-secondary border-b border-gray-800 pb-2">Admissions Letter</h4>
+                <p class="text-gray-400 text-sm mb-4 leading-relaxed">Subscribe to receive regular updates, parent guidelines, and announcements.</p>
+                <form action="#" class="flex flex-col gap-2">
+                    <input type="email" placeholder="Parent email" class="px-4 py-2.5 rounded-lg text-sm bg-gray-900 border border-gray-800 focus:outline-none focus:border-primary text-white">
+                    <button class="bg-primary hover:bg-opacity-95 text-white font-bold py-2.5 rounded-lg text-xs uppercase tracking-wider transition">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Meta Area -->
+        <div class="max-w-7xl mx-auto px-4 md:px-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+            <p>© 2026 ROBERTS SCHOOLS. RC 2633098. All Rights Reserved.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-primary transition">Privacy Policy</a>
+                <span>•</span>
+                <a href="#" class="hover:text-primary transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Actions (WhatsApp & Scroll-To-Top) -->
+    <a href="https://wa.me/2348064567340" target="_blank" class="fixed bottom-6 right-6 z-[99] bg-[#25D366] hover:scale-110 transition text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl animate-bounce" aria-label="WhatsApp Contact: 08064567340">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+    </a>
+    
+    <button id="scroll-top" class="fixed bottom-24 right-6 z-[99] bg-primary hover:bg-opacity-90 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-2xl transition duration-300 opacity-0 scale-0">
+        <i class="fa-solid fa-chevron-up text-lg"></i>
+    </button>
+
+    <!-- JavaScript Integrations (Swiper, GSAP, AOS, and custom interactive logic) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <script>
+        // Init AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+
+        // Preloader
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('preloader');
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+            }, 700);
+        });
+
+        // Sticky Navbar Transition
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-md');
+                nav.classList.remove('py-0');
+            } else {
+                nav.classList.remove('py-2', 'shadow-md');
+            }
+            
+            // Scroll to Top Button Visibility
+            const scrollTopBtn = document.getElementById('scroll-top');
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.remove('opacity-0', 'scale-0');
+                scrollTopBtn.classList.add('opacity-100', 'scale-100');
+            } else {
+                scrollTopBtn.classList.remove('opacity-100', 'scale-100');
+                scrollTopBtn.classList.add('opacity-0', 'scale-0');
+            }
+        });
+
+        // Scroll to Top click implementation
+        document.getElementById('scroll-top').addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Mobile Menu Toggler
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            const isClosed = mobileMenu.classList.contains('hidden');
+            if (isClosed) {
+                mobileMenu.classList.remove('hidden');
+                setTimeout(() => {
+                    mobileMenu.classList.add('scale-y-100', 'opacity-100');
+                    mobileMenu.classList.remove('scale-y-0', 'opacity-0');
+                }, 10);
+                menuBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            } else {
+                mobileMenu.classList.remove('scale-y-100', 'opacity-100');
+                mobileMenu.classList.add('scale-y-0', 'opacity-0');
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+                menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            }
+        });
+
+        // Swiper Instances
+        const heroSwiper = new Swiper('.hero-swiper', {
+            loop: true,
+            effect: 'fade',
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        const teachersSwiper = new Swiper('.teachers-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+
+        const testimonialSwiper = new Swiper('.testimonial-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: { slidesPerView: 2 }
+            }
+        });
+
+        // Animated Statistics Counter Logic
+        function animateValue(obj, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerHTML = Math.floor(progress * (end - start) + start) + (end === 100 ? "%" : "+");
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Observer pattern to trigger counters once scrolled into view
+        const observerOptions = { threshold: 0.5 };
+        const counterObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateValue(document.getElementById('count-pupils'), 0, 500, 2000);
+                    animateValue(document.getElementById('count-teachers'), 0, 35, 2000);
+                    animateValue(document.getElementById('count-years'), 0, 7, 2000);
+                    animateValue(document.getElementById('count-commitment'), 0, 100, 2000);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        counterObserver.observe(document.getElementById('count-pupils').parentElement.parentElement);
+
+        // Accordion Controller
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            const parent = button.parentElement;
+
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0px';
+                icon.className = 'fa-solid fa-plus text-primary transition-transform duration-300';
+                parent.classList.remove('shadow-lg');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.className = 'fa-solid fa-minus text-primary transition-transform duration-300';
+                parent.classList.add('shadow-lg');
+            }
+        }
+
+        // About Tabs Switcher
+        function switchTab(evt, tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.add('hidden'));
+
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('tab-active'));
+
+            document.getElementById(tabId).classList.remove('hidden');
+            evt.currentTarget.classList.add('tab-active');
+        }
+
+        // Gallery Filter Logic
+        function filterGallery(category, button) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => btn.classList.remove('bg-primary', 'text-white'));
+            buttons.forEach(btn => btn.classList.add('bg-white', 'text-gray-500'));
+            button.classList.remove('bg-white', 'text-gray-500');
+            button.classList.add('bg-primary', 'text-white');
+
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.style.display = 'block';
+                    setTimeout(() => item.style.opacity = '1', 50);
+                } else {
+                    item.style.opacity = '0';
+                    setTimeout(() => item.style.display = 'none', 300);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
